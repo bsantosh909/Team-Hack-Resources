@@ -1,0 +1,4 @@
+#palette 
+
+CAVE: Pointer to insert the pallete is to be searched!
+palette: E9 03 D1 2D AF 21 8E 25 00 8E 25 6C 1D 2A 15 E8 14 00 85 08 64 04 43 04 85 08 00 6E 15 4C 15 B0 29 A6 0C
