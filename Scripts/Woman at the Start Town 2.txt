@@ -1,0 +1,8 @@
+#dynamic 0x1A00000
+
+#org @start
+msgbox @1 0x2
+end
+
+#org @1
+= I cook everyday for my family.

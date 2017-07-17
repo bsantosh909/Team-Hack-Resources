@@ -1,0 +1,11 @@
+#dynamic 0xOFFSET
+
+#org @start
+msgbox @1 0x2
+end
+
+#org @1
+= I love my job as a teacher.
+
+
+

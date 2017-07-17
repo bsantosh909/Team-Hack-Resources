@@ -1,0 +1,10 @@
+#dynamic 0xOFFSET
+#org @main
+lock
+faceplayer
+msgbox @spk1 0x6
+release
+end
+
+#org @spk1
+= This town is so silent. \n Come here when you need to relax. 

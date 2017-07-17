@@ -1,0 +1,56 @@
+'---------------
+#dynamic 0xOFFSET
+#org @start
+lock
+checkflag 0x200
+if 0x0 goto @done
+msgbox @2 0x6
+release
+end
+
+
+#org @done
+applymovement 0x03 @move
+waitmovement 0x0
+applymovement 0xFF @move2
+waitmovement 0x0
+msgbox @1 0x6
+giveitem 0x4 0x5 MSG_OBTAIN
+msgbox @2 0x6
+applymovement 0x03 @move3
+waitmovement 0x0
+setflag 0x200
+release
+end
+
+#org @move
+#raw 0x8
+#raw 0x03
+#raw 0xB 
+#raw 0xFE
+
+#org @move2
+#raw 0x02
+#raw 0xFE
+
+#org @move3
+#raw 0x2 
+#raw 0xA 
+#raw 0xA 
+#raw 0xA 
+#raw 0xA 
+#raw 0xA 
+#raw 0xA 
+#raw 0xA 
+#raw 0x9 
+#raw 0x9 
+#raw 0x9 
+#raw 0x9 
+#raw 0x54 
+#raw 0xFE 
+
+#org @1
+= Hello! \nHave some free Pokeballs!
+
+#org @2
+= Visit our store, if you want more.

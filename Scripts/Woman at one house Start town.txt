@@ -1,0 +1,10 @@
+#dynamic 0xOFFSET
+
+#org @start
+msgbox @1 0x2
+end
+
+#org @1
+= Sometimes I hike a little bit at the near forest.
+
+
