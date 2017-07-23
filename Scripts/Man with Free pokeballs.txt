@@ -10,14 +10,14 @@ end
 
 
 #org @done
-applymovement 0x03 @move
+applymovement 0x04 @move
 waitmovement 0x0
 applymovement 0xFF @move2
 waitmovement 0x0
 msgbox @1 0x6
 giveitem 0x4 0x5 MSG_OBTAIN
 msgbox @2 0x6
-applymovement 0x03 @move3
+applymovement 0x04 @move3
 waitmovement 0x0
 setflag 0x200
 release
