@@ -54,4 +54,4 @@ end
 = Hello! \nHave some free Pokeballs!
 
 #org @2
-= Visit our store, if you want more. \p It will reopen soon!
+= Visit our store, if you want more. \pIt will reopen soon!
