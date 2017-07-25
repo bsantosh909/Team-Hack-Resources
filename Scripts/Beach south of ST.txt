@@ -1,0 +1,212 @@
+'---------------
+#dynamic 0x3EB93C
+#org @start
+lock
+checkflag 0x200
+if 0x1 goto @done
+cry 0x1 0x0
+msgbox @text1 0x03
+applymovement 0xFF @move1
+waitmovement 0x0
+applymovement 0x0 @move2
+applymovement 0x2 @move3
+applymovement 0x1 @move4
+waitmovement 0x0
+pause 0x25
+msgbox @text2 0x03
+applymovement 0x0 @move5
+applymovement 0x2 @move6
+applymovement 0x1 @move7
+waitmovement 0x0
+msgbox @text3 0x03
+applymovement 0x1 @move8
+waitmovement 0x0
+msgbox @text4 0x03
+applymovement 0x2 @move9
+applymovement 0x0 @move10
+applymovement 0x1 @move12
+waitmovement 0x2
+fadescreen 0x1
+pause 0x30
+fadescreen 0x0
+applymovement 0xFF @move11
+waitmovement 0x0
+msgbox @text5 0x03
+applymovement 0x2 @move13
+waitmovement 0x0
+movesprite 0x3 0x12 0x15
+applymovement 0x2 @move14
+waitmovement 0x0
+movesprite 0x2 0x1 0x1
+setflag 0x203
+applymovement 0x0 @move15
+waitmovement 0x0
+msgbox @text6 0x03
+applymovement 0x0 @move16
+waitmovement 0x0
+movesprite 0x0 0x1 0x1
+setflag 0x204
+applymovement 0x1 @move17
+waitmovement 0x0
+movesprite 0x1 0x1 0x1
+setflag 0x205
+msgbox @text7 0x03
+applymovement 0xFF @move18
+waitmovement 0x0
+setflag 0x206
+setflag 0x200
+warp 0x0 0x9 0x0 0x0 0x0
+release 
+end
+
+
+
+#org @done
+release
+end
+
+#org @text1
+= \v\h01: What is happening there? \nI have to check it.
+
+#org @text2
+= \v\h01: Hey! What are you doing?!
+
+#org @text3
+= Grunt 1: It is none of your business,\nget out of here kid.\p\v\h01: Who are you and what are you doing \nwith that pokémon?! \pGrunt 2: I suggest you walk away right \nnow before something bad happens. \p\v\h01: Something bad already happened...\nAnd you can't get away with this.\pQuinn: The name is Quinn, \nand this is Eugene.\pOne thing you should know \nis not to get in our way. 
+
+#org @text4
+= Eugene: Hmm? Looks like someone \nlikes you. \p
+Quinn: Last chance, stay out of this. \p\v\h01: It isn't going to be easy \nto do that. \p
+Quinn: Bring it on!
+
+#org @text5
+= Quinn: Well it wasn't me \nwho wanted to do that. \pWhy are we even wasting our \ntime here! \pWe already got what \nwe wanted. \pEugene: Right.
+
+#org @text6
+= Quinn: Don't you ever get \nin our way again, \por else the next time we fight \nwon't end well for you.
+
+#org @text7
+= \v\h01: Urghhh. I don't have a choice, do I?
+
+#org @move1
+#raw 0x15
+#raw 0x15
+#raw 0x15
+#raw 0x15
+#raw 0x15
+#raw 0xFE
+
+#org @move2
+#raw 0x20
+#raw 0x20
+#raw 0x73
+#raw 0x73
+#raw 0xFE
+
+#org @move3
+#raw 0x72
+#raw 0x72
+#raw 0x1F
+#raw 0x1F
+#raw 0xFE
+
+#org @move4
+#raw 0x56
+#raw 0x02
+#raw 0x03
+#raw 0x02
+#raw 0xFE
+
+#org @move5
+#raw 0x01
+#raw 0xFE
+
+#org @move6
+#raw 0x01
+#raw 0xFE
+
+#org @move7
+#raw 0x01
+#raw 0xFE
+
+#org @move8
+#raw 0x16
+#raw 0x02
+#raw 0x17
+#raw 0x01
+#raw 0x16
+#raw 0x00
+#raw 0xFE
+
+#org @move9
+#raw 0x09
+#raw 0x09
+#raw 0x02
+#raw 0x72
+#raw 0x1F
+#raw 0xFE
+
+#org @move10
+#raw 0x09
+#raw 0x09
+#raw 0x03
+#raw 0x20
+#raw 0x73
+#raw 0x20
+#raw 0x73
+#raw 0xFE
+
+#org @move11
+#raw 0x05
+#raw 0x00
+#raw 0xFE
+
+#org @move12
+#raw 0x09
+#raw 0x00
+#raw 0xFE
+
+#org @move13
+#raw 0x03
+#raw 0xFE
+
+#org @move14
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0xFE
+
+#org @move15
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x02
+#raw 0xFE
+
+#org @move16
+#raw 0x0B
+#raw 0xFE
+
+#org @move17
+#raw 0x15
+#raw 0x03
+#raw 0x18
+#raw 0x18
+#raw 0x18
+#raw 0x18
+#raw 0x18
+#raw 0xFE
+
+#org @move18
+#raw 0x08
+#raw 0x03
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x0B
+#raw 0x02
+#raw 0xFE
