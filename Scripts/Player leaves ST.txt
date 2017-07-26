@@ -1,0 +1,16 @@
+'---------------
+#dynamic 0xOFFSET
+#org @start
+lock
+msgbox @text1 0x03
+applymovement 0xFF @move1
+waitmovement 0xFF
+release
+end
+
+#org @text1
+= \v\h01:I should visit the beach.\n I have to relax a little bit.
+
+#org @move1
+#raw 0x0A
+#raw 0xFE

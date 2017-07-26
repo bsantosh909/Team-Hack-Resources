@@ -1,0 +1,11 @@
+'---------------
+#dynamic 0xOFFSET
+#org @start
+lock
+msgbox @text1 0x3
+setvar 0x4014 0x1
+release
+end
+
+#org @text1
+= \v\h01:That was a hard day at school. \nbefore going home I should\pvisit the beach to relax a little bit.
