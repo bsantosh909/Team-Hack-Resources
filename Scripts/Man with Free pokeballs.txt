@@ -2,12 +2,6 @@
 #dynamic 0xOFFSET
 #org @start
 lock
-checkflag 0x201
-if 0x0 goto @done
-release
-end
-
-#org @done
 movesprite 0x3 0x1A 0x24
 msgbox @text1 0x3
 applymovement 0xFF @move3
@@ -20,8 +14,7 @@ msgbox @text3 0x3
 applymovement 0x3 @move2
 waitmovement 0x0
 movesprite 0x3 0x1 0x1
-setflag 0x201
-setflag 0x202
+setvar 0x4013 0x1
 release
 end
 
