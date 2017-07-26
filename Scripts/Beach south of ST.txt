@@ -2,8 +2,6 @@
 #dynamic 0x3EB93C
 #org @start
 lock
-checkflag 0x200
-if 0x1 goto @done
 cry 0x1 0x0
 msgbox @text1 0x03
 applymovement 0xFF @move1
@@ -54,16 +52,12 @@ msgbox @text7 0x03
 applymovement 0xFF @move18
 waitmovement 0x0
 setflag 0x206
-setflag 0x200
+setvar 0x4012 0x1
 warp 0x0 0x9 0x0 0x0 0x0
 release 
 end
 
 
-
-#org @done
-release
-end
 
 #org @text1
 = \v\h01: What is happening there? \nI have to check it.
@@ -72,7 +66,7 @@ end
 = \v\h01: Hey! What are you doing?!
 
 #org @text3
-= Grunt 1: It is none of your business,\nget out of here kid.\p\v\h01: Who are you and what are you doing \nwith that pokémon?! \pGrunt 2: I suggest you walk away right \nnow before something bad happens. \p\v\h01: Something bad already happened...\nAnd you can't get away with this.\pQuinn: The name is Quinn, \nand this is Eugene.\pOne thing you should know \nis not to get in our way. 
+= Grunt 1: It is none of your business,\nget out of here kid.\p\v\h01: Who are you and what are you doing \nwith that pokÃ©mon?! \pGrunt 2: I suggest you walk away right \nnow before something bad happens. \p\v\h01: Something bad already happened...\nAnd you can't get away with this.\pQuinn: The name is Quinn, \nand this is Eugene.\pOne thing you should know \nis not to get in our way. 
 
 #org @text4
 = Eugene: Hmm? Looks like someone \nlikes you. \p
